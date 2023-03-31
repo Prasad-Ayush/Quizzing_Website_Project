@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        Sign In
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database-compat.js"></script>
+
+</head>
+
+<body>
+    <div class="form">
+        <form action="" id="signInform" onsubmit="return false;">
+            <div class="email">
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+            </div>
+
+            <div class="pass">
+                <label for="password"> Password </label>
+                <input type="password" name='password' id='password' placeholder='Enter your password'>
+            </div>
+
+            <button id="signBtn" onclick="signIn()" >Sign In</button>
+            <!-- Sign Up option -->
+            <p> Don't have an account ? </p>
+            <span><a href="signup.html" id='New'> Sign Up</a></span>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

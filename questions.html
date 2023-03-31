@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="questionstyle.css">
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database-compat.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="form">
+        <form action="" id="questionForm">
+            <div class="heading">
+                <h1>Quiz Questions</h1>
+            </div>
+            <p>Write the questions and answers for your quiz in the given areas. After that click on Submit to save your data and then click on Next to write another set of question and answers.</p>
+            <p>When all the questions are over click on Create Quiz.</p>
+            <div class="questions">
+                <label for="q1">Question </label>
+                <textarea name="q1" id="q1" cols="50" rows="3" placeholder="Question"></textarea>
+                <textarea name="o1" id="o1" cols="50" rows="3" placeholder="Option-1"></textarea>
+                <textarea name="o2" id="o2" cols="50" rows="3" placeholder="Option-2"></textarea>
+                <textarea name="o3" id="o3" cols="50" rows="3" placeholder="Option-3"></textarea>
+                <textarea name="o4" id="o4" cols="50" rows="3" placeholder="Option-4"></textarea>
+                <textarea name="correctAns" id="correctAns" cols="50" rows="3" placeholder="Correct Answer"></textarea>
+            </div>
+            <button id="questionSubmit" class="btn">Submit</button>
+            <button id='next' class="btn" onclick="window.location.reload()">Next</button>
+            <a href="quiz.html" target="_blank" id='createQuiz' class='btn'>Create Quiz</a>
+
+    </div>
+    </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database-compat.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn" id="start">Start</div>
+        <div id="guide">
+            <h4>1. You will have only 15s for each question.</h4>
+            <h4>2. Once you select your answer, it can't be undone.</h4>
+            <h4>3. You will get points on the basis of our correct answers.</h4>
+            <h4>4. Once you start the quiz , you cannot exit.</h4>
+            <div class="btn" id="button">
+                <button id='exit'>Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">
+                <h6>Time Left</h6>
+                <h6 id='time'>00</h6>
+            </div>
+
+            <div class="question">
+                <h2 class="questionNo">1.</h2>
+                <h2 class="questionText">User's Question</h2>
+                           
+                <h4 class="answer" id="option1">Answer Option</h4>
+                <h4 class="answer" id="option2">Answer Option</h4>
+                <h4 class="answer" id="option3">Answer Option</h4>
+                <h4 class="answer" id="option4">Answer Option</h4>
+            </div>
+
+            <div id='next'>
+                <h3 id='next_question'>Next</h3>
+            </div>
+        </div>
+
+        <div id="result">
+            <h6> Quiz Completed</h6>
+            <h6 id="points">Points</h6>
+           
+            <button id="share-button">Share</button>
+            <button id='quit'>Quit Quiz</button>
+            <button id ='startAgain'>Start Again</button>
+        </div>
+        <div id="quizReport">
+            <p id ='report'></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     </body>
+
+</html>
